@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <command
+               commandId="Assignment.CreateTrip"
+               label="Create Trip"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="org.iiitb.mt2011045.assignment.CreateTripHandler"
+            id="Assignment.CreateTrip"
+            name="Assignment.CreateTrip">
+      </command>
+   </extension>
+
+</plugin>
